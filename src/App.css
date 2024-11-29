@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f9f9f9;
+ color: #333;
+}
+
+.emi-container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #ffffff;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ border-radius: 10px;
+}
+
+.title {
+ text-align: center;
+ font-size: 24px;
+ margin-bottom: 20px;
+ color: #007bff;
+}
+
+.form {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+label {
+ font-weight: bold;
+}
+
+input {
+ padding: 10px;
+ font-size: 16px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ width: 100%;
+}
+
+button {
+ padding: 10px 20px;
+ font-size: 16px;
+ color: #fff;
+ background-color: #007bff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ text-align: center;
+}
+
+button:hover {
+ background-color: #0056b3;
+}
+
+.emi-table,
+.history-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+}
+
+.emi-table th,
+.emi-table td,
+.history-table th,
+.history-table td {
+ padding: 10px;
+ border: 1px solid #ddd;
+ text-align: center;
+}
+
+.emi-table th,
+.history-table th {
+ background-color: #007bff;
+ color: #fff;
+}
+
+.history-button {
+ margin-top: 20px;
+ width: 100%;
+ text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .emi-container {
+   padding: 15px;
+ }
+
+ .title {
+   font-size: 20px;
+ }
+
+ input,
+ button {
+   font-size: 14px;
+ }
+
+ .emi-table th,
+ .emi-table td,
+ .history-table th,
+ .history-table td {
+   font-size: 14px;
+   padding: 8px;
+ }
+}
+
+@media (max-width: 480px) {
+ .title {
+   font-size: 18px;
+ }
+
+ .form {
+   gap: 10px;
+ }
+
+ button {
+   font-size: 12px;
+   padding: 8px;
+ }
+
+ .emi-table th,
+ .emi-table td,
+ .history-table th,
+ .history-table td {
+   font-size: 12px;
+   padding: 5px;
+ }
+}
